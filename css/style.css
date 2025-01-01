@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+h1, h2, h3 {
+  text-align: center;
+  margin: 40px 0;
+  font-weight: bold;
+}
+
+.question--title {
+  font-size: 20px;
+}
+
+.wrapper{
+  align-items: center;
+}
+
+.box{
+margin: 0 auto;
+}
+
+.box1{
+  display: flex;
+  justify-content: center;
+}
+
+
+.red-box{
+  width: 400px;
+  height: 400px;
+  background-color: #ff0000;
+}
+
+@media screen and (max-width: 960px){
+  .red-box{
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.blue-box{
+  width: 300px;
+  height: 300px;
+  background-color: #ff0000;
+}
+
+@media screen  and (max-width: 960px){
+  .blue-box{
+    background-color: #007bff;
+  }
+}
+
+.blue-box1{
+  width: 300px;
+  height: 300px;
+  margin-right: 75px;
+  background-color: #0008ff;
+}
+
+.green-box{
+  width: 300px;
+  height: 300px;
+  margin-left: 75px;
+  background-color: #22ff00;
+}
+
+@media screen and (max-width: 960px){
+  .blue-box1{
+  margin-right: 25px;
+  }
+  .green-box{
+  margin-left: 25px;
+  }
+}
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.blue--box{
+  width: 300px;
+  height: 300px;
+  background-color: #0008ff;
+  float: left;
+}
+
+.red--box{
+  width: 300px;
+  height: 300px;
+  background-color: #ff0000;
+  float: left;
+}
+
+@media screen and (max-width: 960px){
+  .red--box{
+    float: none;
+  }
+  .blue--box{
+    float: none;
+  }
+
+}
+
+.flex-red{
+  width: 300px;
+  height: 300px;
+  background-color: #ff0000;
+}
+
+.flex-blue{
+  width: 300px;
+  height: 300px;
+  background-color: #0008ff;
+}
+
+.flex-orenge{
+  width: 300px;
+  height: 300px;
+  background-color: #ff8400;
+}
+
+.flex-box{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.text{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+@media screen and (max-width:960px){
+  .flex-box{
+    flex-direction: row-reverse;
+  }
+}
+
+.flex-green{
+  width: 300px;
+  height: 300px;
+  background-color: #00ff51;
+}
+
+.flex-lightgreen{
+  width: 300px;
+  height: 300px;
+  background-color: #d4ff00;
+}
+
+.flex-pink{
+  width: 300px;
+  height: 300px;
+  background-color: #ff00e1;
+}
+
+@media screen and (max-width:960px){
+  .flex-lightgreen{
+    order: 1;
+  }
+  .flex-green{
+    order: 2;
+  }
+  .flex-pink{
+    order: 3;
+  }
+}
+
+.brake-red{
+  width: 300px;
+  height: 300px;
+  background-color: #ff0000;
+}
+
+.brake-green{
+  width: 300px;
+  height: 300px;
+  background-color: #00ff51;
+}
+
+.brake-blue{
+  width: 300px;
+  height: 300px;
+  background-color: #0008ff;
+  display: none;
+}
+
+@media screen and (max-width:960px){
+  .brake-blue{
+    display: block;
+  }
+  .brake-red{
+    display: none;
+  }
+}
